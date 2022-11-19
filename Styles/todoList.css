@@ -36,23 +36,36 @@
 }
 #listsContainer{
     display: flex;
-    flex-direction: column;
-    row-gap:5px;
-    width:400px;
-    justify-content: center;
-    justify-items: center;
-    margin-left: 35%;
     margin-top: 1px;
-    
     margin: auto;
+    justify-content: space-between;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+#buttonsDiv{
+    display: flex;
+    gap: 5px;
+    
+}
+#listsContainer #editbutton{
+    border: none;
+    height:100%;
+    background-color: rgb(212, 138, 41);
+    border-radius: 5px;
+
+}
+#listsContainer #deletebutton{
+    border: none;
+    height:100%;
+    background-color:rgb(169, 40, 40);
+    border-radius: 5px;
 }
 #listsData{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    border: 1px solid black;
     height: 8vh;
     border-radius: 5px;
+    margin-top: 10px;
     
 }
 #container{
