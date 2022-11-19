@@ -1,0 +1,60 @@
+.main{
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;;
+    
+    
+}
+#task_div{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    
+}
+#task_div input{
+    height:40px;
+    border-radius: 5px;
+    
+}
+#status{
+    position: relative;
+    top:15px;
+    width:40px;
+    height: 40px;
+}
+#addbutton{
+    border: none;
+    background-color: rgb(226, 43, 162);
+    border-radius: 5px;
+    width:100px;
+    height:30px;
+    cursor: pointer;
+}
+#addbutton:hover{
+    background-color: greenyellow;
+}
+#listsContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap:5px;
+    width:400px;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 35%;
+    margin-top: 1px;
+    
+    margin: auto;
+}
+#listsData{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border: 1px solid black;
+    height: 8vh;
+    border-radius: 5px;
+    
+}
+#container{
+    margin: auto;
+}
