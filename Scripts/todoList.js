@@ -110,8 +110,13 @@ const  updateOnUi = (data)=>{
         const deleteTask=()=>{
             console.log("CALLING DELETE")
         }
-
+        const editPage=()=>{
+        console.log("editPage")
+        }
         var d = document.querySelector("#deletebutton");
         d.addEventListener("click",deleteTask());
+
+        var edit = document.querySelector("#editbutton");
+        edit.addEventListener("click",editPage());
     
 }
