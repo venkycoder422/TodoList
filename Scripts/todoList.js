@@ -44,6 +44,35 @@ const addTask = async()=>{
     
 }
 
+const editTask = async(id)=>{
+    try {
+        let tasks={
+        title:document.getElementById('title').value,
+    
+        status:document.getElementById('status').checked,
+        }
+    
+        if(tasks.title.length!==0){
+            let res=await fetch(`http://localhost:3000/tasks/{id}`,{
+                method:"PATCH",
+                body:JSON.stringify(tasks),
+                headers:{
+                    "Content-Type":"application/json"
+                }
+            
+            });
+            let data= await res.json();
+    
+        
+        }else{
+        alert("Please input must fill")
+        }
+    
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 
 const  updateOnUi = (data)=>{
     data.forEach(function(text){
